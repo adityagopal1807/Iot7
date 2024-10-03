@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8051 Microcontroller Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>8051 Microcontroller Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the primary purpose of the instruction set in the 8051 microcontroller?</p>
+                <label><input type="radio" name="q1" value="A"> A) To store data</label>
+                <label><input type="radio" name="q1" value="B"> B) To perform operations in a specific order</label>
+                <label><input type="radio" name="q1" value="C"> C) To communicate with external devices</label>
+                <label><input type="radio" name="q1" value="D"> D) To configure the timers</label>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="question">
+                <p>2. What does the mnemonic in an instruction represent?</p>
+                <label><input type="radio" name="q2" value="A"> A) The data type</label>
+                <label><input type="radio" name="q2" value="B"> B) The operation performed</label>
+                <label><input type="radio" name="q2" value="C"> C) The register used</label>
+                <label><input type="radio" name="q2" value="D"> D) The memory address</label>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="question">
+                <p>3. Which of the following is NOT a group of instructions in the 8051 instruction set?</p>
+                <label><input type="radio" name="q3" value="A"> A) Arithmetic Instructions</label>
+                <label><input type="radio" name="q3" value="B"> B) Logic Instructions</label>
+                <label><input type="radio" name="q3" value="C"> C) Networking Instructions</label>
+                <label><input type="radio" name="q3" value="D"> D) Data Transfer Instructions</label>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="question">
+                <p>4. What do arithmetic instructions in the 8051 microcontroller do?</p>
+                <label><input type="radio" name="q4" value="A"> A) Transfer data</label>
+                <label><input type="radio" name="q4" value="B"> B) Perform mathematical operations</label>
+                <label><input type="radio" name="q4" value="C"> C) Control logic functions</label>
+                <label><input type="radio" name="q4" value="D"> D) Access external memory</label>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="question">
+                <p>5. What is the result of the instruction ADD A, R1?</p>
+                <label><input type="radio" name="q5" value="A"> A) Stores the sum of A and R1 in R1</label>
+                <label><input type="radio" name="q5" value="B"> B) Stores the sum of A and R1 in A</label>
+                <label><input type="radio" name="q5" value="C"> C) Does nothing</label>
+                <label><input type="radio" name="q5" value="D"> D) Stores the sum of R1 in A</label>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <div class="question">
+                <p>6. How many types of branch instructions are there in the 8051 instruction set?</p>
+                <label><input type="radio" name="q6" value="A"> A) One</label>
+                <label><input type="radio" name="q6" value="B"> B) Two</label>
+                <label><input type="radio" name="q6" value="C"> C) Three</label>
+                <label><input type="radio" name="q6" value="D"> D) Four</label>
+                <span class="feedback" id="feedback6"></span>
+            </div>
+
+            <div class="question">
+                <p>7. What is the function of unconditional jump instructions?</p>
+                <label><input type="radio" name="q7" value="A"> A) They only jump if a condition is met.</label>
+                <label><input type="radio" name="q7" value="B"> B) They always jump to a new location.</label>
+                <label><input type="radio" name="q7" value="C"> C) They perform arithmetic operations.</label>
+                <label><input type="radio" name="q7" value="D"> D) They reset the program counter.</label>
+                <span class="feedback" id="feedback7"></span>
+            </div>
+
+            <div class="question">
+                <p>8. What do data transfer instructions do in the 8051 microcontroller?</p>
+                <label><input type="radio" name="q8" value="A"> A) Move data between registers without changing the original data</label>
+                <label><input type="radio" name="q8" value="B"> B) Perform calculations on data</label>
+                <label><input type="radio" name="q8" value="C"> C) Control timer operations</label>
+                <label><input type="radio" name="q8" value="D"> D) Execute conditional branches</label>
+                <span class="feedback" id="feedback8"></span>
+            </div>
+
+            <div class="question">
+                <p>9. What is the purpose of the suffix "X" in MOVX instructions?</p>
+                <label><input type="radio" name="q9" value="A"> A) It indicates internal memory transfer.</label>
+                <label><input type="radio" name="q9" value="B"> B) It signifies data exchange with external memory.</label>
+                <label><input type="radio" name="q9" value="C"> C) It indicates a conditional operation.</label>
+                <label><input type="radio" name="q9" value="D"> D) It denotes a bit-oriented operation.</label>
+                <span class="feedback" id="feedback9"></span>
+            </div>
+
+            <div class="question">
+                <p>10. What type of operations do logic instructions perform?</p>
+                <label><input type="radio" name="q10" value="A"> A) Arithmetic calculations</label>
+                <label><input type="radio" name="q10" value="B"> B) Control flow changes</label>
+                <label><input type="radio" name="q10" value="C"> C) Logic operations on bits</label>
+                <label><input type="radio" name="q10" value="D"> D) Data transfers</label>
+                <span class="feedback" id="feedback10"></span>
+            </div>
+
+            <div class="question">
+                <p>11. What are bit-oriented instructions primarily used for?</p>
+                <label><input type="radio" name="q11" value="A"> A) Performing operations on entire registers</label>
+                <label><input type="radio" name="q11" value="B"> B) Executing arithmetic functions</label>
+                <label><input type="radio" name="q11" value="C"> C) Performing logic operations on single bits</label>
+                <label><input type="radio" name="q11" value="D"> D) Jumping to different program locations</label>
+                <span class="feedback" id="feedback11"></span>
+            </div>
+
+            <div class="question">
+                <p>12. What does the Program Status Word (PSW) contain?</p>
+                <label><input type="radio" name="q12" value="A"> A) Timer configuration</label>
+                <label><input type="radio" name="q12" value="B"> B) Current status and flags of the microcontroller</label>
+                <label><input type="radio" name="q12" value="C"> C) Data transfer instructions</label>
+                <label><input type="radio" name="q12" value="D"> D) Serial communication settings</label>
+                <span class="feedback" id="feedback12"></span>
+            </div>
+
+            <div class="question">
+                <p>13. How many timers does the 8051 microcontroller have?</p>
+                <label><input type="radio" name="q13" value="A"> A) One</label>
+                <label><input type="radio" name="q13" value="B"> B) Two</label>
+                <label><input type="radio" name="q13" value="C"> C) Three</label>
+                <label><input type="radio" name="q13" value="D"> D) Four</label>
+                <span class="feedback" id="feedback13"></span>
+            </div>
+
+            <div class="question">
+                <p>14. What is the maximum count of the 16-bit timers in the 8051?</p>
+                <label><input type="radio" name="q14" value="A"> A) 255</label>
+                <label><input type="radio" name="q14" value="B"> B) 1023</label>
+                <label><input type="radio" name="q14" value="C"> C) 65535</label>
+                <label><input type="radio" name="q14" value="D"> D) 32767</label>
+                <span class="feedback" id="feedback14"></span>
+            </div>
+
+            <div class="question">
+                <p>15. What is the function of the TCON register?</p>
+                <label><input type="radio" name="q15" value="A"> A) Timer overflow management</label>
+                <label><input type="radio" name="q15" value="B"> B) Data transfer control</label>
+                <label><input type="radio" name="q15" value="C"> C) Program status tracking</label>
+                <label><input type="radio" name="q15" value="D"> D) Serial communication setup</label>
+                <span class="feedback" id="feedback15"></span>
+            </div>
+
+            <div class="question">
+                <p>16. Which TCON flag indicates an overflow for Timer 0?</p>
+                <label><input type="radio" name="q16" value="A"> A) TF1</label>
+                <label><input type="radio" name="q16" value="B"> B) TR0</label>
+                <label><input type="radio" name="q16" value="C"> C) TF0</label>
+                <label><input type="radio" name="q16" value="D"> D) TR1</label>
+                <span class="feedback" id="feedback16"></span>
+            </div>
+
+            <div class="question">
+                <p>17. What does the TR1 flag control?</p>
+                <label><input type="radio" name="q17" value="A"> A) Timer 1 overflow</label>
+                <label><input type="radio" name="q17" value="B"> B) Timer 1 run status</label>
+                <label><input type="radio" name="q17" value="C"> C) Timer 0 run status</label>
+                <label><input type="radio" name="q17" value="D"> D) External interrupt for INT1</label>
+                <span class="feedback" id="feedback17"></span>
+            </div>
+
+            <div class="question">
+                <p>18. What is the purpose of the TMOD register?</p>
+                <label><input type="radio" name="q18" value="A"> A) To configure the status of serial communication</label>
+                <label><input type="radio" name="q18" value="B"> B) To select timer modes and functions</label>
+                <label><input type="radio" name="q18" value="C"> C) To set the program memory addresses</label>
+                <label><input type="radio" name="q18" value="D"> C) To manage data transfer between registers</label>
+                <span class="feedback" id="feedback18"></span>
+            </div>
+
+            <div class="question">
+                <p>19. Which mode of the timer is set by M0 and M1 bits in the TMOD register?</p>
+                <label><input type="radio" name="q19" value="A"> A) Counter mode</label>
+                <label><input type="radio" name="q19" value="B"> B) Timer mode</label>
+                <label><input type="radio" name="q19" value="C"> C) Interrupt mode</label>
+                <label><input type="radio" name="q19" value="D"> D) Data transfer mode</label>
+                <span class="feedback" id="feedback19"></span>
+            </div>
+
+            <div class="question">
+                <p>20. What are the two types of serial data transmission methods?</p>
+                <label><input type="radio" name="q20" value="A"> A) Simplex and Synchronous</label>
+                <label><input type="radio" name="q20" value="B"> B) Simplex and Duplex</label>
+                <label><input type="radio" name="q20" value="C"> C) Parallel and Asynchronous</label>
+                <label><input type="radio" name="q20" value="D"> D) Synchronous and Asynchronous</label>
+                <span class="feedback" id="feedback20"></span>
+            </div>
+
+            <div class="question">
+                <p>21. In a simplex transmission, how is data transmitted?</p>
+                <label><input type="radio" name="q21" value="A"> A) Bidirectionally</label>
+                <label><input type="radio" name="q21" value="B"> B) One way only</label>
+                <label><input type="radio" name="q21" value="C"> C) In parallel</label>
+                <label><input type="radio" name="q21" value="D"> D) Simultaneously</label>
+                <span class="feedback" id="feedback21"></span>
+            </div>
+
+            <div class="question">
+                <p>22. What does full duplex transmission allow?</p>
+                <label><input type="radio" name="q22" value="A"> A) Data transfer in one direction</label>
+                <label><input type="radio" name="q22" value="B"> B) Simultaneous two-way data transfer</label>
+                <label><input type="radio" name="q22" value="C"> C) Data transfer in parallel</label>
+                <label><input type="radio" name="q22" value="D"> D) Synchronous transmission only</label>
+                <span class="feedback" id="feedback22"></span>
+            </div>
+
+            <div class="question">
+                <p>23. Which register is used to hold data for serial communication in the 8051?</p>
+                <label><input type="radio" name="q23" value="A"> A) TMOD</label>
+                <label><input type="radio" name="q23" value="B"> B) SCON</label>
+                <label><input type="radio" name="q23" value="C"> C) SBUF</label>
+                <label><input type="radio" name="q23" value="D"> D) TCON</label>
+                <span class="feedback" id="feedback23"></span>
+            </div>
+
+            <div class="question">
+                <p>24. What type of communication does UART facilitate?</p>
+                <label><input type="radio" name="q24" value="A"> A) Parallel communication</label>
+                <label><input type="radio" name="q24" value="B"> B) Synchronous communication</label>
+                <label><input type="radio" name="q24" value="C"> C) Asynchronous communication</label>
+                <label><input type="radio" name="q24" value="D"> D) None of the above</label>
+                <span class="feedback" id="feedback24"></span>
+            </div>
+
+            <div class="question">
+                <p>25. What does the SCON register control?</p>
+                <label><input type="radio" name="q25" value="A"> A) Timer operations</label>
+                <label><input type="radio" name="q25" value="B"> B) Serial communication modes</label>
+                <label><input type="radio" name="q25" value="C"> C) Data transfer rates</label>
+                <label><input type="radio" name="q25" value="D"> D) Interrupt management</label>
+                <span class="feedback" id="feedback25"></span>
+            </div>
+
+            <div class="question">
+                <p>26. Which type of communication requires a clock signal?</p>
+                <label><input type="radio" name="q26" value="A"> A) Asynchronous communication</label>
+                <label><input type="radio" name="q26" value="B"> B) Simplex communication</label>
+                <label><input type="radio" name="q26" value="C"> C) Synchronous communication</label>
+                <label><input type="radio" name="q26" value="D"> D) Duplex communication</label>
+                <span class="feedback" id="feedback26"></span>
+            </div>
+
+            <div class="question">
+                <p>27. What does the term "baud rate" refer to in serial communication?</p>
+                <label><input type="radio" name="q27" value="A"> A) The voltage level of signals</label>
+                <label><input type="radio" name="q27" value="B"> B) The speed of data transmission</label>
+                <label><input type="radio" name="q27" value="C"> C) The error rate of data transfer</label>
+                <label><input type="radio" name="q27" value="D"> D) The distance data can travel</label>
+                <span class="feedback" id="feedback27"></span>
+            </div>
+
+            <div class="question">
+                <p>28. What is the main advantage of using I2C over UART?</p>
+                <label><input type="radio" name="q28" value="A"> A) Higher speed</label>
+                <label><input type="radio" name="q28" value="B"> B) Ability to communicate with multiple devices</label>
+                <label><input type="radio" name="q28" value="C"> C) Simplicity of wiring</label>
+                <label><input type="radio" name="q28" value="D"> D) Full duplex communication</label>
+                <span class="feedback" id="feedback28"></span>
+            </div>
+
+            <div class="question">
+                <p>29. Which microcontroller architecture is the 8051 based on?</p>
+                <label><input type="radio" name="q29" value="A"> A) Harvard architecture</label>
+                <label><input type="radio" name="q29" value="B"> B) Von Neumann architecture</label>
+                <label><input type="radio" name="q29" value="C"> C) RISC architecture</label>
+                <label><input type="radio" name="q29" value="D"> D) CISC architecture</label>
+                <span class="feedback" id="feedback29"></span>
+            </div>
+
+            <div class="question">
+                <p>30. Which of the following is NOT a feature of the 8051 microcontroller?</p>
+                <label><input type="radio" name="q30" value="A"> A) 8-bit processor</label>
+                <label><input type="radio" name="q30" value="B"> B) Built-in ADC</label>
+                <label><input type="radio" name="q30" value="C"> C) On-chip ROM</label>
+                <label><input type="radio" name="q30" value="D"> D) Bit addressable RAM</label>
+                <span class="feedback" id="feedback30"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'B',
+            q2: 'B',
+            q3: 'C',
+            q4: 'B',
+            q5: 'B',
+            q6: 'B',
+            q7: 'B',
+            q8: 'A',
+            q9: 'B',
+            q10: 'C',
+            q11: 'C',
+            q12: 'B',
+            q13: 'B',
+            q14: 'C',
+            q15: 'A',
+            q16: 'C',
+            q17: 'B',
+            q18: 'B',
+            q19: 'C',
+            q20: 'D',
+            q21: 'B',
+            q22: 'B',
+            q23: 'C',
+            q24: 'C',
+            q25: 'B',
+            q26: 'C',
+            q27: 'B',
+            q28: 'B',
+            q29: 'A',
+            q30: 'B',
+        };
+
+        document.getElementById('quizForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let score = 0;
+            for (let i = 1; i <= 30; i++) {
+                const questionName = `q${i}`;
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                const feedbackElement = document.getElementById(`feedback${i}`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[questionName]) {
+                        score++;
+                        feedbackElement.textContent = 'Correct!';
+                        feedbackElement.style.color = 'green';
+                    } else {
+                        feedbackElement.textContent = `Incorrect! Correct answer: ${correctAnswers[questionName]}`;
+                        feedbackElement.style.color = 'red';
+                    }
+                } else {
+                    feedbackElement.textContent = 'Please select an answer.';
+                    feedbackElement.style.color = 'orange';
+                }
+            }
+            alert(`Your final score is ${score} out of 30.`);
+        });
+    </script>
+</body>
+</html>
